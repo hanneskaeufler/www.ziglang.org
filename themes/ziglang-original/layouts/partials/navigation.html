@@ -37,7 +37,7 @@
 
 <nav id="navbar" class="nav">
   <div class="container" style="display:flex; justify-content: space-between;">
-    <div>
+    <div style="display: flex; align-items: center;">
       {{ with .Site.GetPage "download"}}
         <a href="{{ "download/" | relLangURL }}" class="navbar-item">{{ .Params.menu_title }}</a>
       {{ end }} 
